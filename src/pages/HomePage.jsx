@@ -134,9 +134,9 @@ export default function HomePage() {
 function SideBar() {
   return (
     <ul>
+      {/* <li>LeftSideBar</li>
       <li>LeftSideBar</li>
-      <li>LeftSideBar</li>
-      <li>LeftSideBar</li>
+      <li>LeftSideBar</li> */}
     </ul>
   );
 }

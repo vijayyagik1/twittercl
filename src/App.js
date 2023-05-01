@@ -10,6 +10,9 @@ import { useRecoilState, useSetRecoilState } from "recoil";
 import { tweetsAtom } from "./recoil/tweets";
 import { authAtom, usersAtom } from "./recoil/users";
 import { log } from "joi-browser";
+import Sidebar from "./pages/SIdebar";
+import Who from "../src/pages/Who";
+
 
 const PR = ({ children }) => {
   const navigate = useNavigate();
@@ -60,7 +63,10 @@ function App() {
           path="/"
           element={
             <PR>
+              <Sidebar />
               <HomePage />
+              <Who />
+
             </PR>
           }
         />
